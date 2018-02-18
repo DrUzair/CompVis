@@ -16,10 +16,10 @@ One of the most powerful ideas: to learn the filter as a network parameter
 * Valid vs Same Convolutions
 Valid ( without padding)
 
-input $n x n$
-filter $f x f$ 
-
-input * filter = n - f + 1 $
+ input $n_h x n_w$
+ filter $f x f$ 
+ n = n_h = n_w
+ input * filter = n - f + 1 $
 
 Same (with Padding)
 
@@ -29,7 +29,7 @@ padding $p = \frac{f - 1}{2}$
 
 ### Strided Convolutions
 
-input $n x n$
+input $n_h x n_w$
 
 filter $f x f$
 
@@ -37,15 +37,23 @@ p padding
 
 s stride
 
+ n = n_h = n_w
+ 
 output floor(\frac{n +2p - f}{s} + 1)
 
 ### 3D Convolutions
 $n_c$ depth or channels of input matrix (RGB of image)
 
-input $n x n x n_c$
+input $n_h x n_w x n_c$
 
 filter $f x f x n_c$
-
+ 
+ n = n_h = n_w
+ 
 output = input * filter = $(n - f + 1) x n_c'$
 
 number of filters n_c' 
+
+## CNN Notation
+image height n_h
+imgage 
