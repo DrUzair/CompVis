@@ -14,5 +14,9 @@ One of the most powerful ideas: to learn the filter as a network parameter
 ### Padding
 
 * Valid vs Same Convolutions
-
+Valid ( without padding)
 $n x n * f x f = n - f + a $
+
+Same (with Padding)
+$n + 2p - f + 1$ 
+padding $p = \frac{f - 1}{2}$
