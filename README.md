@@ -16,10 +16,21 @@ One of the most powerful ideas: to learn the filter as a network parameter
 * Valid vs Same Convolutions
 Valid ( without padding)
 
-$n x n * f x f = n - f + a $
+$n x n * f x f = n - f + 1 $
 
 Same (with Padding)
 
 $n + 2p - f + 1$ 
 
 padding $p = \frac{f - 1}{2}$
+
+### Strided Convolutions
+n x n input
+
+f x f filter
+
+p padding 
+
+s stride
+
+floor(\frac{n +2p - f}{s} + 1)
