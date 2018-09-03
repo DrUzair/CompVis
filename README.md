@@ -63,3 +63,5 @@ output = ((input - filter)/stride) + 1
 ## CNN Notation
 image height n_h
 imgage 
+
+Let $\text{S}_1(N) = \sum_{p=1}^N \text{E}(p)$
