@@ -54,6 +54,12 @@ output = input * filter = $(n - f + 1) x n_c'$
 
 number of filters n_c' 
 
+### 1x1 Convolutions
+Dimensionality reduction/increase in filter-space.
+
+### Pooling / Down sampling (Max, Avg)
+Reducing the spatial dimension. Applied on each channel/filter of input.
+output = ((input - filter)/stride) + 1
 ## CNN Notation
 image height n_h
 imgage 
