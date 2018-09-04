@@ -56,6 +56,7 @@ number of filters n_c'
 
 ### 1x1 Convolutions
 Dimensionality reduction/increase in filter-space.
+a.k.a Feature Pooling (32x32x512 CONV 1x1x256 --> 32x32x256)
 
 ### Pooling / Down sampling (Max, Avg)
 Reducing the spatial dimension. Applied on each channel/filter of input.
